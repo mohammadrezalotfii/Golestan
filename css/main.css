@@ -44,6 +44,7 @@ div.menu > nav {
 div.menu > nav > ul {
   width: 90%;
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   list-style-type: none;
   align-items: end;
@@ -52,9 +53,14 @@ div.menu > nav > ul {
 
 div.menu > nav > ul > li {
   width: fit-content;
-  border-right: 1px solid #888b8a;
-  padding: 16px 20px 16px 0px;
+  display: flex;
+  padding: 16px 0px 16px 0px;
   line-height: 10px;
+}
+
+div.menu > nav > ul > li.line {
+  border-right: 1px solid #888b8a;
+  height: 42px;
 }
 
 div.menu > nav > ul > li:nth-child(1) {
@@ -62,6 +68,9 @@ div.menu > nav > ul > li:nth-child(1) {
 }
 
 div.menu > nav > ul > li > a {
+  height: 100%;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: #888b8a;
   font-size: 16px;
